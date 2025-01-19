@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog Website</h1>
+  </header>
+
+  <main>
+    <!-- Note-Taking Section -->
+    <section id="note-taking">
+      <h2>Note-Taking</h2>
+      <textarea id="note-area" placeholder="Write down your ideas here..."></textarea>
+      <button id="save-note">Save Note</button>
+      <h3>Saved Notes</h3>
+      <ul id="notes-list"></ul>
+    </section>
+
+    <!-- Blog Editor Section -->
+    <section id="blog-editor">
+      <h2>Rich Text Editor</h2>
+      <!-- New Blog Title Input -->
+      <input type="text" id="blog-title" placeholder="Enter blog title...">
+      
+      <div id="editor-controls">
+        <button class="format-btn" data-command="bold">B</button>
+        <button class="format-btn" data-command="italic">I</button>
+        <button class="format-btn" data-command="underline">U</button>
+        <button class="format-btn" data-command="insertOrderedList">Ordered List</button>
+        <button class="format-btn" data-command="insertUnorderedList">Unordered List</button>
+        <button class="format-btn" data-command="formatBlock" data-value="h1">H1</button>
+        <button class="format-btn" data-command="formatBlock" data-value="h2">H2</button>
+      </div>
+      <div id="editor" contenteditable="true" placeholder="Start writing your blog here..."></div>
+      <button id="publish-blog">Publish Blog</button>
+    </section>
+
+    <!-- Published Blogs Section -->
+    <section id="published-blogs">
+      <h2>Published Blogs</h2>
+      <div id="blogs-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
